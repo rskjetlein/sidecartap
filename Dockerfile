@@ -1,7 +1,4 @@
-FROM alpine
-
-RUN apt-get update
-RUN apt-get install -y python3 python3-pip
+FROM python:3.9.12-slim
 
 RUN pip install requests
 

@@ -1,6 +1,6 @@
 # sidecartap
 
-Based on the corelight project vxlan[^1]
+Based on the corelight project container monitoring, vxlan[^1]
 
 
 Environment variables needs to be set:
@@ -41,4 +41,4 @@ spec:
 ```
 
 
-[^1]: url
+[^1]: https://github.com/corelight/container-monitoring/tree/main/monitoring

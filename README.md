@@ -1,7 +1,7 @@
 # sidecartap
-
 Based on the corelight project container monitoring, vxlan[^1]
 
+![sidecartap](https://docs.google.com/drawings/d/e/2PACX-1vT8ydyw3Rp9n8XdgZz8QuFC_iW8ZgUXV_Z2F6gz63E25SVuWk3Qcpvqc9CgmIII-X3yVn8abO_eUO7C/pub?w=480&h=360)
 
 Environment variables needs to be set:
 * SENSOR 

@@ -110,10 +110,9 @@ def main():
         if protocol in [6, 17] and len(ipPacket) >= ipHeaderLength+3:
             srcPort = struct.unpack('!H', ipPacket[ipHeaderLength+0:ipHeaderLength+2])[0]
             dstPort = struct.unpack('!H', ipPacket[ipHeaderLength+2:ipHeaderLength+4])[0]
-
-            # No idea what this is but we don't want to report on UDP/16401
-            # Nor our own traffic on UDP/4789...
-            if protocol == 17 and (srcPort == 16401 or dstPort == 4789):
+            
+            # Not our own traffic on UDP/4789 to sensor
+            if protocol == 17 and dstPort == 4789 and dstIP == sensorAddr:
                 continue
 
             if protocol == 17:
